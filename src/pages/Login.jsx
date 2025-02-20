@@ -13,7 +13,7 @@ export default function Login() {
   const submitHandler = async (e) => {
     try {
       e.preventDefault();
-      const res = await axios.post("https://reqres.in/api/login", userData);
+      const res = await axios.post(import.meta.env.VITE_API_URL, userData);
       console.log(res);
       localStorage.setItem("token", res.data.token);
       navigate("/home");
