@@ -54,7 +54,7 @@ export default function Login() {
         <div className="flex flex-col w-3/5 relative">
           <label htmlFor="password">Password</label>
           <input
-            type={showPassword?"text":"password"}
+            type={showPassword ? "text" : "password"}
             id="password"
             name="password"
             value={userData.password}

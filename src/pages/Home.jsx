@@ -11,23 +11,16 @@ export default function Home() {
     <div>
       <NavBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <div className="p-2 ml-4 mt-4 flex">
-        <AddProductForm
-          products={products}
-          setProducts={setProducts}
-          
-        />
+        <AddProductForm products={products} setProducts={setProducts} />
         <div className="flex-grow ">
-          <ProductList products={products} searchQuery={searchQuery}    setProducts={setProducts} />
+          <ProductList
+            products={products}
+            searchQuery={searchQuery}
+            setProducts={setProducts}
+          />
         </div>
       </div>
     </div>
   );
 }
-{
-  /* <div className="w-[30%] p-2 flex flex-col items-center justify-center">
-          <SearchBar
-            searchQuery={searchQuery}
-            setSearchQuery={setSearchQuery}
-          />
-        </div> */
-}
+
