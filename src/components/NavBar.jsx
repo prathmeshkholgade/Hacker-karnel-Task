@@ -11,7 +11,7 @@ export default function NavBar({ searchQuery, setSearchQuery }) {
   return (
     <div className="w-full flex justify-evenly items-center p-2  shadow-2xl">
       <div className="logo">Products</div>
-      <div className="search w-[30%] ">
+      <div className="search mx-2  sm:w-[33%] ">
         <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       </div>
       <div>

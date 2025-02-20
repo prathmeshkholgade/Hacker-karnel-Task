@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <NavBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <div className="p-2 ml-4 mt-4 flex">
+      <div className="p-2 ml-4 mt-4 md:flex">
         <AddProductForm products={products} setProducts={setProducts} />
         <div className="flex-grow ">
           <ProductList
